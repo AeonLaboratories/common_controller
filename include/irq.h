@@ -1,0 +1,14 @@
+///////////////////////////////////////////////////////
+// irq.h
+//
+// Common Controller
+
+#pragma once // Include this file only once
+
+
+///////////////////////////////////////////////////////
+// prototypes
+//
+void init_irq();
+void update_controller();
+void do_commands();

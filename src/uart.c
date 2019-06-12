@@ -108,8 +108,7 @@ BOOL RxbEmpty() { return Rxb_head == Rxb_tail; }
 
 ///////////////////////////////////////////////////////
 // serial data received
-#pragma interrupt
-void isr_uart0_rx()
+void interrupt isr_uart0_rx()
 {
 	RxByte = U0RXD;
 
@@ -316,8 +315,7 @@ int tryArg(int min, int max, uint16_t error, int default_value, BOOL hundredths)
 // a character from the buffer into the transmit data
 // register.
 #if TXB_SIZE > 0
-	#pragma interrupt
-	void isr_uart0_tx()
+	void interrupt isr_uart0_tx()
 	{
 		DI_TX();		
 		EI();

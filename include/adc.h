@@ -8,10 +8,9 @@
 #include "..\\..\\common_controller\\include\\c99types.h"
 
 ///////////////////////////////////////////////////////
-extern volatile int Adcd;
-extern volatile uint8_t AdcdReads;
+extern volatile uint8_t AdcdSettling;
 
-#define adc_reset()				(AdcdReads = 0)
+#define adc_reset()				(AdcdSettling = ADC_SETTLING_TIME)
 
 ///////////////////////////////////////////////////////
 // prototypes

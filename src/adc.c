@@ -3,11 +3,10 @@
 //
 // Common Controller
 
-#include "..\\..\\common_controller\\include\\adc.h"
 #include "config.h"
+#include "..\\..\\common_controller\\include\\adc.h"
 
-volatile int Adcd;
-volatile uint8_t AdcdReads;
+volatile uint8_t AdcdSettling;
 
 
 ////////////////////////////////////////////////////////
